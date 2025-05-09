@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="grid-container">
+        <header>
+            <h1>Mi Sitio Web</h1>
+        </header>
+
+        <nav class="navbar">
+            <div class="menu-icon" id="menuIcon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="pintar.html">Pintar</a></li>
+                <li><a href="4_colores.html">4 Colores</a></li>
+            </ul>
+        </nav>
+
+        <aside class="sidebar">
+            <h2>Filtros de Búsqueda</h2>
+            <div class="filter-section">
+                <h3>Páginas</h3>
+                <ul class="filter-list">
+                    <li><a href="index.html">Página Principal</a></li>
+                    <li><a href="pintar.html">Pintar</a></li>
+                    <li><a href="4_colores.html">4 Colores</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section class="content-section">
+                <h2>Bienvenido a la Página Principal</h2>
+                <p>Esta es la página principal de nuestro sitio web. Aquí encontrarás información relevante sobre nuestros servicios y productos.</p>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Servicio 1</h3>
+                        <p>Descripción del servicio 1.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Servicio 2</h3>
+                        <p>Descripción del servicio 2.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Servicio 3</h3>
+                        <p>Descripción del servicio 3.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>Email: info@ejemplo.com</p>
+                    <p>Teléfono: (123) 456-7890</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces</h3>
+                    <ul>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Mi Sitio Web. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Script para manejar el menú hamburguesa en dispositivos móviles
+        document.getElementById('menuIcon').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
