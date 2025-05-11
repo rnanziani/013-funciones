@@ -43,16 +43,40 @@
                 <p>Esta es la página principal de nuestro sitio web. Aquí encontrarás información relevante sobre nuestros servicios y productos.</p>
                 <div class="card-container">
                     <div class="card">
-                        <h3>Servicio 1</h3>
-                        <p>Descripción del servicio 1.</p>
+                        <h3>Ejercicio 1</h3>
+                        <p>
+                            Transforma esta declaración de función a una función de expresión. El ejercicio debe
+                            quedar en un archivo nombrado `1_funcion.js`
+                            function example(a, b, c){
+                            return a+b+c
+                            }
+                        </p>
                     </div>
                     <div class="card">
-                        <h3>Servicio 2</h3>
-                        <p>Descripción del servicio 2.</p>
+                        <h3>Respuesta 1</h3>
+                        <p>
+                            Función de expresión
+                              const example = function(a, b, c) {
+                              return a + b + c;
+                            };
+                        </p>
                     </div>
                     <div class="card">
-                        <h3>Servicio 3</h3>
-                        <p>Descripción del servicio 3.</p>
+                        <h3>Ejercicio 2</h3>
+                        <p>
+                            Transforma la siguiente función a una arrow function de una línea. Este ejercicio
+                            debe quedar en un archivo llamado `2_arrow.js` (1 Punto)
+                            let suma = function(a, b){
+                                return a + b
+                                }
+                                
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3>Respuesta 2</h3>
+                        <p>
+                            const suma = (a, b) => a + b;
+                        </p>
                     </div>
                 </div>
             </section>
@@ -87,11 +111,18 @@
         </footer>
     </div>
 
+    <script src="./assets/js/1_funcion.js"></script>
     <script>
-        // Script para manejar el menú hamburguesa en dispositivos móviles
-        document.getElementById('menuIcon').addEventListener('click', function() {
-            document.querySelector('.nav-links').classList.toggle('show');
-        });
+      // Llamamos a la función y mostramos el resultado
+      const resultado = example(15, 10, 15);
+      console.log('Resultado de la suma example es:', resultado);
     </script>
+    
+    <script src="./assets/js/2_arrow.js"></script>
+    <script>
+      // Llamamos a la función y mostramos el resultado
+      console.log('La suam de a + b es:', suma(45, 15)); 
+    </script>
+
 </body>
 </html>
