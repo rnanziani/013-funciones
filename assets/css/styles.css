@@ -123,12 +123,20 @@ header {
     
 }
 
+
 .card-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+    gap: 20px;
 }
+
+.card {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 
 #ele1 {
     width: 200px;
@@ -142,12 +150,7 @@ header {
     margin: 50px auto;
   }
 
-.card {
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+
 
 .color-grid {
     display: grid;
