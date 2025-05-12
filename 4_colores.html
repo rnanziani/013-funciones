@@ -11,7 +11,7 @@
 <body>
     <div class="grid-container">
         <header>
-            <h1>Mi Sitio Web</h1>
+            <h1>Ejercicios de Funciones</h1>
         </header>
 
         <nav class="navbar">
@@ -42,21 +42,16 @@
                 <h2>Los 4 Colores Básicos</h2>
                 <p>Explora los cuatro colores fundamentales y sus aplicaciones.</p>
                 <div class="color-grid">
-                    <div class="color-card" style="background-color: rgba(255, 0, 0, 0.7);">
-                        <h3>Rojo</h3>
-                        <p>El color de la pasión y la energía.</p>
-                    </div>
-                    <div class="color-card" style="background-color: rgba(0, 0, 255, 0.7);">
-                        <h3>Azul</h3>
-                        <p>El color de la calma y la serenidad.</p>
-                    </div>
-                    <div class="color-card" style="background-color: rgba(255, 255, 0, 0.7);">
-                        <h3>Amarillo</h3>
-                        <p>El color de la alegría y el optimismo.</p>
-                    </div>
-                    <div class="color-card" style="background-color: rgba(0, 128, 0, 0.7);">
-                        <h3>Verde</h3>
-                        <p>El color de la naturaleza y la armonía.</p>
+                    <!-- Cuatro cuadros iniciales -->
+                    <div id="div_azul" class="color-box" style="background-color: blue;"></div>
+                    <div id="div_rojo" class="color-box" style="background-color: red;"></div>
+                    <div id="div_verde" class="color-box" style="background-color: green;"></div>
+                    <div id="div_amarillo" class="color-box" style="background-color: yellow;"></div>
+
+                    <!-- Cuadro para teclas: "key" -->
+                    <!-- Contenedor para el div key y los divs nuevos -->
+                    <div id="contenedor-dinamico">
+                        <div id="key" class="color-box" style="background-color: white;"></div>
                     </div>
                 </div>
             </section>
@@ -66,8 +61,8 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Contacto</h3>
-                    <p>Email: info@ejemplo.com</p>
-                    <p>Teléfono: (123) 456-7890</p>
+                    <p>Email: info@egmail.com</p>
+                    <p>Teléfono: 56 9 0000-0000</p>
                 </div>
                 <div class="footer-section">
                     <h3>Enlaces</h3>
@@ -86,16 +81,11 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 Mi Sitio Web. Todos los derechos reservados.</p>
+                <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
             </div>
         </footer>
     </div>
 
-    <script>
-        // Script para manejar el menú hamburguesa en dispositivos móviles
-        document.getElementById('menuIcon').addEventListener('click', function() {
-            document.querySelector('.nav-links').classList.toggle('show');
-        });
-    </script>
+    <script src="assets/js/4_colores.js"></script>
 </body>
 </html>
